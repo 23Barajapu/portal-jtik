@@ -55,22 +55,7 @@
                         </nav>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-6">
-                    <div class="vl-herobtn d-none d-lg-block fl-right">
-                        <a href="<?php echo e(route('second', ['pages', 'contact'])); ?>" class="theme-btn">GET STARTED <span><i
-                                    class="fa-regular fa-arrow-right"></i></span></a>
-                    </div>
-
-                    <div class="vl-header-action-item d-block d-lg-none">
-                        <button type="button" class="vl-offcanvas-toggle">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" viewBox="0 0 30 16">
-                                <rect x="10" width="20" height="2" fill="currentColor"></rect>
-                                <rect x="5" y="7" width="25" height="2" fill="currentColor"></rect>
-                                <rect x="10" y="14" width="20" height="2" fill="currentColor"></rect>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>

@@ -80,7 +80,20 @@
 
         <div class="contain">
           <div id="test" class="owl-carousel owl-theme">
-          @foreach($dosens as $dosen)
+          @php
+            $prioritas = [
+              'Ketua Jurusan',
+              'Sekretaris Jurusan',
+              'Ketua Prodi TRPL',
+              'Ketua Prodi SI',
+            ];
+            $dosens_prioritas = collect($dosens)->filter(fn($d) => in_array($d->jabatan, $prioritas));
+            $dosens_biasa = collect($dosens)->filter(fn($d) => !in_array($d->jabatan, $prioritas));
+            $dosens_urut = $dosens_prioritas->sortBy(function($d) use ($prioritas) {
+              return array_search($d->jabatan, $prioritas);
+            })->concat($dosens_biasa);
+          @endphp
+          @foreach($dosens_urut as $dosen)
             <div class="vl-team-sin">
               <div class="vl-team-thumb">
                 <div class="vl-team-shape">
