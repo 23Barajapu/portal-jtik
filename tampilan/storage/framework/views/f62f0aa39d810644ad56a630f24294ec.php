@@ -1,12 +1,12 @@
 <?php $__env->startSection('content'); ?>
-    <!-- ================= Banner section start ================= -->
+  <!-- ================= Banner section start ================= -->
     <section class="vl-hero-area vl-hero-area-4 vl-hero-bg p-relative z-index-1 fix pt-190 pb-70"
         style="background: linear-gradient(135deg, rgba(58,47,217,0.25) 0%, rgba(78,31,174,0.55) 100%), url('/img/about/gedung-jtik.jpg') center center/cover no-repeat; min-height: 100vh;">
-        <div class="container">
-            <div class="row">
+    <div class="container">
+    <div class="row">
                 <div class="col-xl-6 mb-30 d-flex align-items-center" style="min-height:60vh;">
                     <div class="vl-hero-content p-relative z-index-1 ps-4 pe-4" style="max-width: 600px; width:100%; background: rgba(0,0,0,0.01);">
-                        <div class="vl-section-title-wrapper">
+        <div class="vl-section-title-wrapper">
                             <h4 class="vl-section-subtitle-5 vl-white vl-upper mb-3" style="font-size:1.1rem; letter-spacing:1px;">Jurusan Teknik Informatika dan Komputer</h4>
                             <h1 class="vl-section-heading vl-section-heading-2 vl-white pt-2 mb-4" style="font-size:2.5rem; line-height:1.2; font-weight:700;">Jurusan Teknik Informatika dan Komputer - Mewujudkan Inovator Digital Masa Depan</h1>
                             <ul class="vl-section-description mb-4" style="color:#fff; font-size:18px; line-height:1.7;">
@@ -16,16 +16,16 @@
                                 <li>Peluang magang dan kerja sama industri</li>
                                 <li>Sertifikasi kompetensi nasional & internasional</li>
                             </ul>
-                        </div>
+        </div>
                         <div class="vl-btns mb-2">
-                            <div class="vl-herobtn vl-upper">
+        <div class="vl-herobtn vl-upper">
                                 <a href=<?php echo e(route('prodi.index')); ?> class="theme-btn" style="padding: 12px 32px; font-size:1.1rem; border-radius:32px; font-weight:600;">Lihat Program Studi<span><i class="fa-regular fa-arrow-right"></i></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        </div>
+        </div>
+      </div>
+      </div>
                 <!-- Hapus kolom kanan gambar gedung -->
-            </div>
+        </div>
         </div>
         <style>
         @media (max-width: 991px) {
@@ -33,7 +33,7 @@
           .vl-hero-area .col-xl-6 {justify-content: center !important;}
         }
         </style>
-    </section>
+  </section>
     <div class="gradient-transition"></div>
     <style>
     .gradient-transition {
@@ -55,7 +55,7 @@
       .gradient-transition { height: 80px; margin-top: -80px; }
     }
     </style>
-    <!-- ================= Banner section End ================= -->
+  <!-- ================= Banner section End ================= -->
 
     <!-- ================= Program Studi section start ================= -->
     <!-- Section Program Studi dihapus seluruhnya -->
@@ -74,7 +74,7 @@
           </div>
           </div>
           <div class="col-lg-4"></div>
-        </div>
+          </div>
 
         <div class="contain">
           <div id="test" class="owl-carousel owl-theme">
@@ -110,16 +110,16 @@
               <div class="vl-team-content">
                 <h4 class="title"><a href="#"><?php echo e($dosen->nama); ?></a></h4>
                 <span><?php echo e($dosen->jabatan ?? 'Dosen'); ?></span>
-              </div>
+            </div>
             </div>
           <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-          </div>
-        </div>
-        </div>
-      </section>
+      </div>
+    </div>
+    </div>
+  </section>
     <!-- ================= Dosen & Tendik section End ================= -->
 
-    <!-- ================= Service section start ================= -->
+  <!-- ================= Service section start ================= -->
   <section class="vl-service-area vl-gray-bg-4 pt-100 pb-70">
     <div class="container">
     <div class="vl-section-title-wrapper text-center mb-60 aos-init aos-animate" data-aos="fade-up" data-aos-duration="900">
