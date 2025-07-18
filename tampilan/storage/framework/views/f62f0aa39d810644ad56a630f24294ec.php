@@ -124,7 +124,7 @@
     <div class="container">
     <div class="vl-section-title-wrapper text-center mb-60 aos-init aos-animate" data-aos="fade-up" data-aos-duration="900">
       <div class="vl-section-subheading">
-      <h4 class="vl-section-subtitle-6 vl-upper">Our Service</h4>
+      <h4 class="vl-section-subtitle-6 vl-upper">Berita</h4>
       </div>
       <h2 class="vl-section-title vl-section-title-2 pt-16">Empowering Growth with <br />Smart IT Services</h2>
     </div>
@@ -234,6 +234,32 @@
     </div>
   </section>
   <!-- ================= Service section End ================= -->
-  <?php $__env->stopSection(); ?>
+  <style>
+  .vl-team .contain {
+    position: relative;
+  }
+  .owl-carousel .owl-nav {
+    position: absolute;
+    top: -70px;
+    right: 0;
+    left: auto;
+    display: flex;
+    gap: 16px;
+    z-index: 20;
+    justify-content: flex-end;
+    width: 100%;
+    pointer-events: auto;
+  }
+  .owl-carousel .owl-nav button {
+    margin: 0 !important;
+  }
+  @media (max-width: 991px) {
+    .owl-carousel .owl-nav {
+      top: -50px;
+      gap: 8px;
+    }
+  }
+  </style>
+<?php $__env->stopSection(); ?>
 
 <?php echo $__env->make('layouts.landing', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH C:\laragon\www\Jurusan\jtik\tampilan\resources\views/index.blade.php ENDPATH**/ ?>
