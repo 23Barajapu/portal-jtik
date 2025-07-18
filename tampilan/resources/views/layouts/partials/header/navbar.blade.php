@@ -55,7 +55,7 @@
                         </nav>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-6">
+                {{-- <div class="col-lg-3 col-md-6 col-6">
                     <div class="vl-herobtn d-none d-lg-block fl-right">
                         <a href="{{ route('second', ['pages', 'contact']) }}" class="theme-btn">GET STARTED <span><i
                                     class="fa-regular fa-arrow-right"></i></span></a>
@@ -70,7 +70,7 @@
                             </svg>
                         </button>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>
