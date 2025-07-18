@@ -10,8 +10,6 @@
             <!-- Header -->
             <div class="row justify-content-center pt-5 pb-3" style="padding-top: 110px !important;">
                 <div class="col-lg-10 text-center text-white">
-                    <img src="/img/logo/Logo.png" alt="Logo JTIK"
-                        style="max-height:64px; margin-bottom: 16px; filter: drop-shadow(0 2px 8px #222);">
                     <h1 class="vl-section-title vl-section-title-2 pt-16 pb-8"
                         style="color:#fff; text-shadow:0 2px 8px #222;">Tentang JTIK</h1>
                     <hr style="width: 80px; border: 2px solid #fff; margin: 0 auto 24px auto; opacity:0.7;">

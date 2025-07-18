@@ -9,8 +9,8 @@
                 <div class="col-xl-6 mb-30 d-flex align-items-center" style="min-height:60vh;">
                     <div class="vl-hero-content p-relative z-index-1 ps-4 pe-4" style="max-width: 600px; width:100%; background: rgba(0,0,0,0.01);">
         <div class="vl-section-title-wrapper">
-                            <h4 class="vl-section-subtitle-5 vl-white vl-upper mb-3" style="font-size:1.1rem; letter-spacing:1px;">Jurusan Teknik Informatika dan Komputer</h4>
-                            <h1 class="vl-section-heading vl-section-heading-2 vl-white pt-2 mb-4" style="font-size:2.5rem; line-height:1.2; font-weight:700;">Jurusan Teknik Informatika dan Komputer - Mewujudkan Inovator Digital Masa Depan</h1>
+                            <h4 class="vl-section-subtitle-5 vl-white vl-upper mb-3" style="font-size:1.1rem; letter-spacing:1px;">Jurusan Teknologi Informasi dan Komputer</h4>
+                            <h1 class="vl-section-heading vl-section-heading-2 vl-white pt-2 mb-4" style="font-size:2.5rem; line-height:1.2; font-weight:700;">Jurusan Teknologi Informasi dan Komputer - Mewujudkan Inovator Digital Masa Depan</h1>
                             <ul class="vl-section-description mb-4" style="color:#fff; font-size:18px; line-height:1.7;">
                                 <li>Kurikulum berbasis industri 4.0</li>
                                 <li>Dosen berpengalaman dan bersertifikasi</li>

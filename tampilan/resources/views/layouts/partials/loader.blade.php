@@ -3,7 +3,7 @@
   <div class="loading-container">
     <div class="loading"></div>
     <div id="loading-icon">
-      <img src="/img/preloader/preloader1.png" alt="" />
+      <img src="/img/logo/polsub.png" alt="Logo Polsub" />
     </div>
   </div>
 </div>
