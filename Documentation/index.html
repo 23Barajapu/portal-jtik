@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Otech - Docs </title>
+  <meta name="description" content="Thanks for purchasing Appside. If you need any support, please contact with us.">
+  <meta name="author" content="Unifato">
+  <meta name="copyright" content="Unifato">
+  <link rel="shortcut icon" type="image/png" href="img/background/vl-fav-ic-1.1.svg">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="left-side">
+      <div class="logo">
+        <a href="#">
+          Otech
+        </a>
+
+      </div>
+      <div class="left-content">
+        <ul role="tablist">
+          <li role="presentation" class="active"><a href="#welcome" aria-controls="home" role="tab" data-toggle="tab"><span><i class="fa fa-home"></i></span>Welcome</a></li>
+          <li role="presentation"><a href="#structure" aria-controls="home" role="tab" data-toggle="tab"><span><i class="fa fa-folder"></i></span>Main File Structure</a></li>
+          <li role="presentation"><a href="#setup" aria-controls="home" role="tab" data-toggle="tab"><span><i class="fa fa-terminal"></i></span>Setup</a></li>
+          <li role="presentation"><a href="#source" aria-controls="home" role="tab" data-toggle="tab"><span><i class="fa fa-thumbs-up"></i></span>Sources &amp; Credits</a></li>
+          <li role="presentation"><a href="#support" aria-controls="home" role="tab" data-toggle="tab"><span><i class="fa fa-support"></i></span>Support</a></li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2024. <a href="#">Otech</a> <span>All Rights Reserved.</span></p>
+      </div>
+    </div>
+    <div class="right-side">
+      <div class="right-content">
+        <div id="welcome" class="content active fade in">
+          <h1> <span>Otech </span> IT-Service-And-Technology</h1>
+          <div class="created">
+            <p>
+              Created: <br>
+              Latest Update: <br>
+              By: <a href="#">Unifato
+              </a><br>
+              Email: <a href="mailto:unifato.themes@gmail.com" target="_blank">unifato.themes@gmail.com</a><br>
+              <br>
+              Thank you for purchasing our theme. Otech IT-Service-And-Technology. If you have any question, please feel free to contact us.
+            </p>
+          </div>
+        </div>
+        <div id="structure" class="content fade">
+          <h1>Main File Structure</h1>
+          <p>
+              All the file are well organized, its so easy to work with the template.
+          </p>
+          <pre>
+              <xmp>
+      ├── app
+      │   ├── Http
+      │   │   ├── Controllers
+      │   │   └── Requests
+      │   └── Providers
+      ├── bootstrap
+      ├── config
+      ├── database
+      ├── public
+      │   └── images
+      ├── resources
+      │   ├── fonts
+      │   ├── js
+      │   ├── scss
+      │   └── views
+      ├── routes
+      ├── storage
+      ├── tests
+      ├── .env.example
+      ├── bun.lockb
+      ├── composer.json
+      ├── composer.lock
+      ├── package-lock.json
+      ├── package.json
+      ├── vite.config.js
+      └── yarn.lock
+          </xmp>
+          </pre>
+      </div>
+
+      <div id="setup" class="content fade">
+          <div>
+              <div>
+                  <h3>Prerequisites</h3>
+                  <p>Please follow below steps to install and setup all prerequisites:</p>
+                  <ul style="margin-left: 30px;">
+                      <li>
+                          <a href="https://www.php.net/" target="_blank">
+                              <h5>PHP &gt;= 8.2</h5>
+                          </a>
+                      </li>
+                      <li>
+                          <h5>BCMath PHP Extension</h5>
+                      </li>
+                      <li>
+                          <h5>Ctype PHP Extension</h5>
+                      </li>
+                      <li>
+                          <h5>Fileinfo PHP extension</h5>
+                      </li>
+                      <li>
+                          <h5>JSON PHP Extension</h5>
+                      </li>
+                      <li>
+                          <h5>Mbstring PHP Extension</h5>
+                      </li>
+                      <li>
+                          <h5>OpenSSL PHP Extension</h5>
+                      </li>
+                      <li>
+                          <h5>PDO PHP Extension</h5>
+                      </li>
+                      <li>
+                          <h5>Tokenizer PHP Extension</h5>
+                      </li>
+                      <li>
+                          <h5>XML PHP Extension</h5>
+                      </li>
+                      <li>
+                          <h5>Composer</h5>
+                          <p>Make sure you have the <a href="https://getcomposer.org/" target="_blank" class="text-primary">
+                              Composer</a> installed & running on your computer. If you already have installed Composer on your computer, you can skip this step.</p>
+
+                      </li>
+                      <li>
+                          <h5>Node.js</h5>
+                          <p>
+                              In order to use build tools you will need to download and install <a href="https://nodejs.org/" target="_blank" class="text-primary">Node.js</a>. If you do not have Node.js installed already, you can get it by downloading
+                              the package installer from the official website. Please download the stable version of Node.js (LTS).
+                          </p>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+
+          <div>
+              <div>
+                  <h3 style="margin-top: 40px;">Installation</h3>
+
+                  <div style="margin-left: 20px;">
+                      <p>You can run the following commands to run project locally or build for production use:
+                      </p>
+                      <p>You can run this app following package manager: <strong>Bun</strong>,
+                          <strong>Yarn</strong> or <strong>NPM</strong></p>
+
+                      <div class="mt-2">
+                          <h5 class="text-danger">1. Bun</h5>
+                          <p class="mb-2">If you don't have <strong>bun</strong> installed on your PC, use the
+                              <code>npm i
+                                  -g bun</code> or <code>sudo npm i -g
+                                  bun </code> to install</p>
+                          <div class="table-responsive mt-3">
+                              <table class="table table-bordered">
+                                  <thead>
+                                      <tr>
+                                          <th>Command</th>
+                                          <th>Description</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                          <td>
+                                              <code>bun i</code><br>
+                                          </td>
+                                          <td>
+                                              This would install all required dependencies in <code>node_modules</code> folder.
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                              <code>bun dev</code>
+                                          </td>
+                                          <td>
+                                              Runs the project locally, starts the development server.
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                              <code>bun run build</code>
+                                          </td>
+                                          <td>It bundles with production mode. Your app is now ready to be deployed.
+                                          </td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                      </div>
+
+                      <div class="mt-2">
+                          <h5 class="text-danger">2. Yarn</h5>
+                          <p class="mb-2">If you don't have <strong>yarn</strong> installed on your PC, use the next command <code>npm i -g yarn</code> or <code>sudo npm i -g yarn </code></p>
+                          <div class="table-responsive mt-3">
+                              <table class="table table-bordered">
+                                  <thead>
+                                      <tr>
+                                          <th>Command</th>
+                                          <th>Description</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                          <td>
+                                              <code>yarn</code><br>
+                                          </td>
+                                          <td>
+                                              This would install all required dependencies in <code>node_modules</code> folder.
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                              <code>yarn dev</code>
+                                          </td>
+                                          <td>
+                                              Runs the project locally, starts the development server.
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                              <code>yarn build</code>
+                                          </td>
+                                          <td>It bundles with production mode. Your app is now ready to be deployed.
+                                          </td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                      </div>
+
+                      <div class="mt-2">
+                          <h5 class="text-danger">3. NPM</h5>
+                          <p class="mb-2"><strong>npm</strong> comes preinstalled when you install Nodejs </p>
+                          <div class="table-responsive mt-3">
+                              <table class="table table-bordered">
+                                  <thead>
+                                      <tr>
+                                          <th>Command</th>
+                                          <th>Description</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                          <td>
+                                              <code>npm i</code> or <code>npm i --force</code><br>
+                                          </td>
+                                          <td>This would install all required dependencies in
+                                              <code>node_modules</code> folder.
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                              <code>npm run dev</code>
+                                          </td>
+                                          <td>Runs the project locally, starts the development server.</td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                              <code>npm run build</code>
+                                          </td>
+                                          <td>It bundles with production mode. Your app is now ready to be deployed.
+                                          </td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                      </div>
+
+                      <div class="mt-2">
+                          <p class="mb-2">To spin up the Laravel development server, follow the below mentioned steps in a separate terminal:</p>
+                          <div class="table-responsive mt-3">
+                              <table class="table table-bordered">
+                                  <thead>
+                                      <tr>
+                                          <th>Command</th>
+                                          <th>Description</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                          <td>
+                                              <code>composer i</code><br>
+                                          </td>
+                                          <td> This will install all required dependencies in
+                                              <code>vendor</code> folder.
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                              <code>cp .env.example .env</code>
+                                          </td>
+                                          <td>
+                                              This will copy .env.example as .env file.
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                              <code>php artisan key:generate</code>
+                                          </td>
+                                          <td>
+                                              This will generate a unique key and write it in your .env file
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                              <code>php artisan migrate</code><br>
+                                          </td>
+                                          <td>
+                                              This will execute all pending migrations to database.
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                              <code>php artisan serve</code><br>
+                                          </td>
+                                          <td>
+                                              Runs the project locally, starts the development server on <a href="http://127.0.0.1:8000" target="_blank" class="text-primary">http://127.0.0.1:8000</a>.
+                                          </td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+
+      </div>
+
+
+        <div id="source" class="content fade">
+          <h1> Sources &amp; Credits </h1>
+          <ul>
+            <li><span>Fonts</span>
+              <a href="https://fonts.google.com/specimen/Wisteria">"'Outfit', sans-serif"</a>
+            </li>
+            <li><span>Icons</span>
+              <ul>
+                <li><a href="https://fontawesome.com/">Fontawesome 6 Pro</a></li>
+              </ul>
+            </li>
+            <li><span>Bootstrap</span> <a href="https://getbootstrap.com/">Bootstrap 5</a></li>
+          </ul>
+        </div>
+        <div id="support" class="content fade">
+          <h1> Supports </h1>
+          <p>Thank you for reading the documentaion. If you still have any question or any problem, please contact with us. We will give you best support. Thanks.</p>
+          <a href="https://themeforest.net/user/unifato/portfolio">Unifato</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
