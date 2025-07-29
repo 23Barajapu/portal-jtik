@@ -61,6 +61,79 @@
     <!-- Section Program Studi dihapus seluruhnya -->
     <!-- ================= Program Studi section End ================= -->
 
+    <!-- ================= About section start ================= -->
+    <section class="vl-about-area pt-100 pb-70">
+        <div class="container">
+        <div class="row flex-lg-row flex-column-reverse align-items-center">
+          <div class="col-lg-6 mb-30">
+          <div class="vl-about-imgs vl-about-imgs-3 p-relative z-index-1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="800">
+            <div class="vl-about-large4">
+            <img class="w-100" src="/img/about/vl-about-4.1.png" alt="" />
+            </div>
+            <div class="vl-about-sm-2 d-none d-md-block">
+            <img src="/img/about/vl-about-top-sm-4.2.png" alt="" />
+            </div>
+
+            <div class="vl-about-poligon-shap p-relative z-index-1 fl-right">
+            <img src="/img/icons/vl-about-poliogon.svg" alt="" />
+            <div class="vl-about-poligon-title">
+              <span class="counter vl-semi vl-white">12</span><span>+</span>
+              <p class="vl-fs-20 vl-lineheight-20 pt-10 m-0">Fasilitas tersedia</p>
+            </div>
+            </div>
+          </div>
+          </div>
+          <div class="col-lg-6 mb-30">
+          <div class="vl-about-content-4 aos-init aos-animate" data-aos="fade-left" data-aos-duration="800">
+            <div class="vl-section-title-wrapper">
+            <div class="vl-section-subheading">
+              <h4 class="vl-section-subtitle-6 vl-upper">Fasilitas JTIK</h4>
+            </div>
+            <h2 class="vl-section-title vl-section-title-2 pt-16 pb-20">Empower Your Business<br /> Every Step of the Way</h2>
+            <p class="vl-section-description-2 pb-32">
+              Whether it optimizing IT infrastructure, enhancing cybersecurity, <br />or driving digital transformation, we are committed to helping.
+            </p>
+
+            <div class="row">
+              <div class="col-lg-6 col-md-6">
+              <div class="vl-about-icon-box-4 br-8 mb-30">
+                <div class="vl-about-icon-box-4-icon4">
+                <span><img src="/img/icons/vl-ser-ic-4.1.svg" alt="" /></span>
+                </div>
+                <div class="vl-about-icon-box-4-content4">
+                <h3 class="vl-about-icon-box-4-title pt-20 pb-16"><a href="<?php echo e(route('second', ['services', 'single'])); ?>">Excellence in Solution</a></h3>
+                <p>We are committed delivering innovative, reliable & scalable.</p>
+                </div>
+              </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6">
+              <div class="vl-about-icon-box-4 br-8 mb-30">
+                <div class="vl-about-icon-box-4-icon4">
+                <span><img src="/img/icons/vl-ser-ic-4.2.svg" alt="" /></span>
+                </div>
+                <div class="vl-about-icon-box-4-content4">
+                <h3 class="vl-about-icon-box-4-title pt-20 pb-16"><a href="<?php echo e(route('second', ['services', 'single'])); ?>">Difference We Deliver</a></h3>
+                <p>
+                  Our team of experts brings <br /> years of experience across.
+                </p>
+                </div>
+              </div>
+              </div>
+            </div>
+            </div>
+            <div class="vl-aboutbtn">
+            <div class="vl-herobtn vl-aboutbtn vl-upper">
+              <a href="<?php echo e(route('second', ['pages', 'about'])); ?>" class="theme-btn theme-btn2">About us<span><i class="fa-regular fa-arrow-right"></i></span></a>
+            </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        </div>
+      </section>
+    <!-- ================= About section End ================= -->
+
     <!-- ================= Dosen & Tendik section start ================= -->
     <section class="vl-team vl-team-bg p-relative pt-100 pb-100">
         <div class="container p-relative">
@@ -102,8 +175,8 @@
                   <ul>
                     <li><a href="#"><span><i class="fa-brands fa-facebook-f"></i></span></a></li>
                     <li><a href="#"><span><i class="fa-brands fa-linkedin-in"></i></span></a></li>
-                    <li><a href="#"><span><i class="fa-brands fa-instagram"></i></span></a></li>
-                    <li><a href="#"><span><i class="fa-brands fa-youtube"></i></span></a></li>
+                    <li><a href="https://www.instagram.com/jtik.polsub/"><span><i class="fa-brands fa-instagram"></i></span></a></li>
+                    <li><a href="http://www.youtube.com/@PoliteknikNegeriSubang"><span><i class="fa-brands fa-youtube"></i></span></a></li>
                   </ul>
                 </div>
               </div>
