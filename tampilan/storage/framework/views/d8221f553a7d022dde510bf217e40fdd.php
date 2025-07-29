@@ -147,14 +147,9 @@
                         style="background:rgba(255,255,255,0.85); border-radius:8px; margin-bottom:24px;">
                         <h3 class="mb-3">Staf Pengajar</h3>
                         <ol type="1">
-                            <li>1. Nunu Nugraha Purnawan, S.Pd., M.Kom.</li>
-                            <li>2. Tri Herdiawan Apandi, S.ST., M.T.</li>
-                            <li>3. Rian Piarna, S.E., M.M.</li>
-                            <li>4. Mohammad Iqbal, S.Kom., M.T.</li>
-                            <li>5. Slamet Rahayu, S.Pd., M.Pd.</li>
-                            <li>6. Dwi Vernanda, S.T., M.Pd.</li>
-                            <li>7. Haryati, S.Pd., M.Pd.</li>
-                            <li>8. Nurfitria Khoirunnisa, S.Tr.Kom., M.Kom.</li>
+                            <?php $__currentLoopData = $dosens; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $dosen): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                <li><?php echo e($dosen->nama); ?></li>
+                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                         </ol>
                     </div>
                     <div class="card shadow-sm p-4 about-card"

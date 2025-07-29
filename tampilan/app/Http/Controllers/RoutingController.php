@@ -59,7 +59,8 @@ class RoutingController extends Controller
         // Ambil data mata kuliah untuk prodi D3SI
         $prodi = Prodi::where('jenjang', 'D3')->first();
         $mataKuliahs = $prodi ? $prodi->mataKuliahs : collect();
-        return view('prodi.d3si', compact('mataKuliahs'));
+        $dosens = \App\Models\Dosen::all();
+        return view('prodi.d3si', compact('mataKuliahs', 'dosens'));
     }
 
     /**
@@ -70,7 +71,8 @@ class RoutingController extends Controller
         // Ambil data mata kuliah untuk prodi D4TRPL
         $prodi = Prodi::where('jenjang', 'D4')->first();
         $mataKuliahs = $prodi ? $prodi->mataKuliahs : collect();
-        return view('prodi.d4trpl', compact('mataKuliahs'));
+        $dosens = \App\Models\Dosen::all();
+        return view('prodi.d4trpl', compact('mataKuliahs', 'dosens'));
     }
 
     /**
