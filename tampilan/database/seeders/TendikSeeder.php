@@ -15,8 +15,33 @@ class TendikSeeder extends Seeder
     {
         \DB::table('tendiks')->truncate();
         \DB::table('tendiks')->insert([
-            [ 'nama' => 'Rina Dewi', 'jabatan' => 'Tendik', 'foto' => 'vl-team-1.4.png', 'created_at' => now(), 'updated_at' => now() ],
-            [ 'nama' => 'Agus Santoso', 'jabatan' => 'Tendik', 'foto' => 'vl-team-1.5.png', 'created_at' => now(), 'updated_at' => now() ],
+            [
+                'nama' => 'Wulan Siti Nurul Masriah, S.E.',
+                'nip' => '198508192021212000',
+                'jabatan' => 'PLP',
+                'prodi' => 'TENDIK',
+                'foto' => null,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'nama' => 'Erin Tri Rezqi Maudy, A.Md.Kom',
+                'nip' => '240100109',
+                'jabatan' => 'Teknisi',
+                'prodi' => 'TENDIK',
+                'foto' => null,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'nama' => 'Cica Rismawanti, A.Md.Kom',
+                'nip' => '199603122025062000',
+                'jabatan' => 'Admin',
+                'prodi' => 'TENDIK',
+                'foto' => null,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
         ]);
     }
 }

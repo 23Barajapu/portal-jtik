@@ -7,19 +7,19 @@
                 <div class="col-xl-6 mb-30 d-flex align-items-center" style="min-height:60vh;">
                     <div class="vl-hero-content p-relative z-index-1 ps-4 pe-4" style="max-width: 600px; width:100%; background: rgba(0,0,0,0.01);">
         <div class="vl-section-title-wrapper">
-                            <h4 class="vl-section-subtitle-5 vl-white vl-upper mb-3" style="font-size:1.1rem; letter-spacing:1px;">Jurusan Teknologi Informasi dan Komputer</h4>
-                            <h1 class="vl-section-heading vl-section-heading-2 vl-white pt-2 mb-4" style="font-size:2.5rem; line-height:1.2; font-weight:700;">Jurusan Teknologi Informasi dan Komputer - Mewujudkan Inovator Digital Masa Depan</h1>
-                            <ul class="vl-section-description mb-4" style="color:#fff; font-size:18px; line-height:1.7;">
+          <h4 class="vl-section-subtitle-5 vl-white vl-upper mb-3" style="font-size:1.1rem; letter-spacing:1px;">Jurusan Teknologi Informasi dan Komputer</h4>
+            <h1 class="vl-section-heading vl-section-heading-2 vl-white pt-2 mb-4" style="font-size:2.5rem; line-height:1.2; font-weight:700;">Jurusan Teknologi Informasi dan Komputer - Mewujudkan Inovator Digital Masa Depan</h1>
+            <ul class="vl-section-description mb-4" style="color:#fff; font-size:18px; line-height:1.7;">
                                 <li>Kurikulum berbasis industri 4.0</li>
                                 <li>Dosen berpengalaman dan bersertifikasi</li>
                                 <li>Laboratorium lengkap dan modern</li>
                                 <li>Peluang magang dan kerja sama industri</li>
                                 <li>Sertifikasi kompetensi nasional & internasional</li>
                             </ul>
-        </div>
-                        <div class="vl-btns mb-2">
+                          </div>
+                          <div class="vl-btns mb-2">
         <div class="vl-herobtn vl-upper">
-                                <a href=<?php echo e(route('prodi.index')); ?> class="theme-btn" style="padding: 12px 32px; font-size:1.1rem; border-radius:32px; font-weight:600;">Lihat Program Studi<span><i class="fa-regular fa-arrow-right"></i></span></a>
+          <a href=<?php echo e(route('prodi.index')); ?> class="theme-btn" style="padding: 12px 32px; font-size:1.1rem; border-radius:32px; font-weight:600;">Lihat Program Studi<span><i class="fa-regular fa-arrow-right"></i></span></a>
         </div>
         </div>
       </div>
@@ -151,43 +151,62 @@
 
         <div class="contain">
           <div id="test" class="owl-carousel owl-theme">
-          <?php
-            $prioritas = [
-              'Ketua Jurusan',
-              'Sekretaris Jurusan',
-              'Ketua Prodi TRPL',
-              'Ketua Prodi SI',
-            ];
-            $dosens_prioritas = collect($dosens)->filter(fn($d) => in_array($d->jabatan, $prioritas));
-            $dosens_biasa = collect($dosens)->filter(fn($d) => !in_array($d->jabatan, $prioritas));
-            $dosens_urut = $dosens_prioritas->sortBy(function($d) use ($prioritas) {
-              return array_search($d->jabatan, $prioritas);
-            })->concat($dosens_biasa);
-          ?>
-          <?php $__currentLoopData = $dosens_urut; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $dosen): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-            <div class="vl-team-sin">
-              <div class="vl-team-thumb">
-                <div class="vl-team-shape">
-                  <img src="/img/icons/vl-tean-shap1.svg" alt="" />
+            <?php
+              $prioritas = [
+                'Ketua Jurusan',
+                'Sekretaris Jurusan',
+                'Kaprodi TRPL',
+                'Kaprodi SI',
+                'Ka Lab MDI',
+                'Ka Lab JARKOM',
+                'Ka Lab RPL',
+                'Ka Lab UX',
+                'Ka Lab SI',
+              ];
+              $dosen_prioritas = collect($dosens)->filter(fn($d) => in_array($d->jabatan, $prioritas));
+              $dosen_biasa = collect($dosens)->filter(fn($d) => !in_array($d->jabatan, $prioritas));
+              $dosen_urut = $dosen_prioritas->sortBy(function($d) use ($prioritas) {
+                return array_search($d->jabatan, $prioritas);
+              })->concat($dosen_biasa);
+            ?>
+            <?php $__currentLoopData = $dosen_urut; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $dosen): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+              <div class="vl-team-sin">
+                <div class="vl-team-thumb">
+                  <div class="vl-team-shape">
+                    <img src="/img/icons/vl-tean-shap1.svg" alt="" />
+                  </div>
+                  <img class="w-100" src="<?php echo e($dosen->foto ? asset('storage/' . $dosen->foto) : '/img/team/vl-team-4.1.png'); ?>" alt="<?php echo e($dosen->nama); ?>" />
+                  <div class="vl-tem-social">
+                    <ul>
+                      <li><a href="#"><span><i class="fa-brands fa-facebook-f"></i></span></a></li>
+                      <li><a href="#"><span><i class="fa-brands fa-linkedin-in"></i></span></a></li>
+                      <li><a href="https://www.instagram.com/jtik.polsub/"><span><i class="fa-brands fa-instagram"></i></span></a></li>
+                      <li><a href="http://www.youtube.com/@PoliteknikNegeriSubang"><span><i class="fa-brands fa-youtube"></i></span></a></li>
+                    </ul>
+                  </div>
                 </div>
-                <img class="w-100" src="<?php echo e($dosen->foto ? asset('storage/' . $dosen->foto) : '/img/team/vl-team-4.1.png'); ?>" alt="<?php echo e($dosen->nama); ?>" />
-                <div class="vl-tem-social">
-                  <ul>
-                    <li><a href="#"><span><i class="fa-brands fa-facebook-f"></i></span></a></li>
-                    <li><a href="#"><span><i class="fa-brands fa-linkedin-in"></i></span></a></li>
-                    <li><a href="https://www.instagram.com/jtik.polsub/"><span><i class="fa-brands fa-instagram"></i></span></a></li>
-                    <li><a href="http://www.youtube.com/@PoliteknikNegeriSubang"><span><i class="fa-brands fa-youtube"></i></span></a></li>
-                  </ul>
+                <div class="vl-team-content">
+                  <h4 class="title"><a href="#"><?php echo e($dosen->nama); ?></a></h4>
+                  <span><?php echo e($dosen->jabatan ?? 'Dosen'); ?></span>
                 </div>
               </div>
-              <div class="vl-team-content">
-                <h4 class="title"><a href="#"><?php echo e($dosen->nama); ?></a></h4>
-                <span><?php echo e($dosen->jabatan ?? 'Dosen'); ?></span>
-            </div>
-            </div>
-          <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-      </div>
-    </div>
+            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+            <?php $__currentLoopData = $tendiks; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $tendik): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+              <div class="vl-team-sin">
+                <div class="vl-team-thumb">
+                  <div class="vl-team-shape">
+                    <img src="/img/icons/vl-tean-shap1.svg" alt="" />
+                  </div>
+                  <img class="w-100" src="<?php echo e($tendik->foto ? asset('storage/' . $tendik->foto) : '/img/team/vl-team-4.1.png'); ?>" alt="<?php echo e($tendik->nama); ?>" />
+                </div>
+                <div class="vl-team-content">
+                  <h4 class="title"><a href="#"><?php echo e($tendik->nama); ?></a></h4>
+                  <span><?php echo e($tendik->jabatan ?? 'Tendik'); ?></span>
+                </div>
+              </div>
+            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+          </div>
+        </div>
     </div>
   </section>
     <!-- ================= Dosen & Tendik section End ================= -->
