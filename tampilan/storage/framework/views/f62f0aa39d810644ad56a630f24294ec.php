@@ -198,6 +198,14 @@
                     <img src="/img/icons/vl-tean-shap1.svg" alt="" />
                   </div>
                   <img class="w-100" src="<?php echo e($tendik->foto ? asset('storage/' . $tendik->foto) : '/img/team/vl-team-4.1.png'); ?>" alt="<?php echo e($tendik->nama); ?>" />
+                  <div class="vl-tem-social">
+                    <ul>
+                      <li><a href="#"><span><i class="fa-brands fa-facebook-f"></i></span></a></li>
+                      <li><a href="#"><span><i class="fa-brands fa-linkedin-in"></i></span></a></li>
+                      <li><a href="https://www.instagram.com/jtik.polsub/"><span><i class="fa-brands fa-instagram"></i></span></a></li>
+                      <li><a href="http://www.youtube.com/@PoliteknikNegeriSubang"><span><i class="fa-brands fa-youtube"></i></span></a></li>
+                    </ul>
+                  </div>
                 </div>
                 <div class="vl-team-content">
                   <h4 class="title"><a href="#"><?php echo e($tendik->nama); ?></a></h4>
