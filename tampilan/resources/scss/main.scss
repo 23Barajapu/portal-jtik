@@ -1,0 +1,16 @@
+
+
+@import '/node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '/node_modules/magnific-popup/dist/magnific-popup.css';
+@import '/node_modules/slick-slider/slick/slick.css';
+@import '/node_modules/owl.carousel/dist/assets/owl.carousel.min.css';
+@import '/node_modules/owl.carousel/dist/assets/owl.theme.default.css';
+@import '/node_modules/aos/dist/aos.css';
+
+@import './component/fontawesome';
+@import './component/slick-theme';
+
+@import 'utils';
+@import 'component';
+@import 'theme';
+@import 'layout';
